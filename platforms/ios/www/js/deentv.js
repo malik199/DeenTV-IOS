@@ -89,6 +89,7 @@ function init_app(){
 			getHomePage();
 			function getHomePage(){
 			  var htmlString = "";
+                //this is where I am going to add code for JSON
 			  var ytapiurl    = 'http://gdata.youtube.com/feeds/api/users/UCTK1vQoMkZGq5msgX6ofCUg/uploads?alt=json&'; //max-results=10
 			  $.getJSON(ytapiurl, function(data) {
 						$.each(data.feed.entry, function(i, item) {
